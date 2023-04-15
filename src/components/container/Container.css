@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: 1px solid black;
+}
+
+.container .content {
+    margin: auto;
+    color: aliceblue;
+    align-items: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
